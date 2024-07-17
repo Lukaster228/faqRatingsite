@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "WorkSans-Bold";
+    src: url("fonts/static/WorkSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "WorkSans";
+    src: url("fonts/static/WorkSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "WorkSans-SemiBold";
+    src: url("fonts/static/WorkSans-SemiBold.ttf");
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    font-family: "WorkSans", sans-serif;
+}
+
+#body-top-img-el {
+    height: 40%;
+    width: 100%;
+    background-image: url("images/background-pattern-desktop.svg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+#body-bottom-color-el {
+    height: 60%;
+    background: hsl(275, 100%, 97%);
+}
+
+#main-div-el {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#main-div-content-el {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-container-el {
+    margin-bottom: 0;
+}
+
+#img-and-txt-el {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+}
+
+#star-icon {
+    width: 45px;
+    height: 45px;
+}
+
+#faq-txt {
+    font-family: "WorkSans-SemiBold";
+}
+
+#bottom-container {
+    display: flex;
+    margin-top: 0;
+}
+
+#bottom-container-content {
+    width: 90%;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 110%;
+}
+
+.bottom-content:hover {
+    cursor: pointer;
+}
+
+.bottom-content:hover .text-to-open{
+    color: hsl(275, 100%, 77%);
+}
+
+.text-to-open {
+    font-family: "WorkSans-SemiBold", sans-serif;
+}
+
+.expand-btn-el {
+    background-image: url("images/icon-plus.svg");
+    background-size: cover;
+    border-radius: 50%;
+    min-width: 30px;
+    height: 30px;
+    border: none;
+    background-color: white;
+}
+
+.expand-btn-el:hover {
+    cursor: pointer;
+}
+
+.ul-style {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    color: hsl(0, 0%, 32%);
+}
+
+@media (max-width: 620px) {
+    #main-div-el {
+        width: 400px;
+    }
+}
+
+@media (max-width: 390px) {
+    #main-div-el {
+        width: 350px;
+    }
+
+    .text-to-open {
+        width: 260px;
+    }
+}
